@@ -62,13 +62,23 @@ book-api/
 go mod tidy
 go run main.go
 
+================= OR ======================
+
+```bash
+git clone https://github.com/mfarthas-al/book-api.git
+cd book-api
+go mod tidy
+go run main.go
+
+
 visit:
 http://localhost:3000/books
 
 
 ### 2. Run with Docker
 
-docker-compose up --build
+docker compose build --no-cache
+docker compose up 
 
 Visit:
 http://localhost:3000/books
